@@ -9,7 +9,7 @@ const CountryWeather = () => {
   //Function to get fetch data from Weather service
   const getWeatherData = async () => {
     const dataWeather = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=c8faa6bdd0890b10b8350c18a28ec9a1&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=&units=metric`
     );
     const json = await dataWeather.json();
     setCityWeather(json);
